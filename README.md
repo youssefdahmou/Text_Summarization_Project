@@ -4,6 +4,8 @@
 
 This project focuses on text summarization, utilizing a combination of web scraping, data cleaning, and training various models, including BERT, LSTM with encoder-decoder architecture, and Pegasus. The highlight of the project is the modification of the BERT model to incorporate entity recognition for improved context comprehension.
 
+
+
 ## Project Structure
 
 The project is organized into the following folders:
@@ -12,7 +14,8 @@ The project is organized into the following folders:
 - **notebooks:** Holds Jupyter notebooks used for data cleaning, model training, and experimentation.
 - **report_and_presentation:** Includes documentation and presentation materials.
 - **summary_app:** Houses the application for easy access to the summarization model.
-
+![Your Image Alt Text](Summary_app/App_Architecture.png)
+![Your Image Alt Text](Summary_app/Interface.png)
 ## Workflow
 
 1. **Data Collection:**
@@ -35,7 +38,7 @@ The project is organized into the following folders:
 To use the summarization application:
 
 1. Clone the project repository.
-2. Navigate to the "app" folder.
+2. Navigate to the "Summary_app" folder.
 3. Install the required dependencies using `pip install -r requirements.txt`.
 4. Run the Flask app with the command `python app.py`.
 
@@ -51,4 +54,8 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
-We appreciate the contributions of the team members who worked on different aspects of the project.
+We appreciate the contributions of the team members:
+- [Soufiane Elghasi](https://github.com/SoufianeElghazi)
+- [Amin Masseri](https://github.com/AmineMsr)
+
+who worked on different aspects of the project.
