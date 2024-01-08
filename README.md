@@ -54,7 +54,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
-We appreciate the contributions of the team members:
+I appreciate the contributions of the team members:
 - [Soufiane Elghasi](https://github.com/SoufianeElghazi)
 - [Amin Masseri](https://github.com/AmineMsr)
 
