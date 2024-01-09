@@ -55,7 +55,7 @@ This project is licensed under the [MIT License](LICENSE).
 ## Acknowledgments
 
 I appreciate the contributions of the team members:
-- [Soufiane Elghasi](https://github.com/SoufianeElghazi)
-- [Amin Masseri](https://github.com/AmineMsr)
+- [Soufiane Elghazi](https://github.com/SoufianeElghazi)
+- [Amine Masseri](https://github.com/AmineMsr)
 
 who worked on different aspects of the project.
