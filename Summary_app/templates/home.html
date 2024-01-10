@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ESI Summariser</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_home.css') }}">
+    <script src="{{ url_for('static', filename='home.js') }}"></script>
+
+</head>
+
+<body > 
+    <div class="snowflake">🍂</div>
+    <div class="snowflake">🍂</div>
+    <div class="snowflake">🍂</div>
+    <div class="snowflake">🍂</div>
+    <div class="snowflake">🍂</div>
+    <div class="snowflake">🍂</div>
+    <div class="snowflake">🍂</div>
+    <div class="snowflake">🍂</div>
+    <div class="snowflake">🍂</div> 
+    <div class="snowflake">🍂</div>
+    <div class="snowflake">🍂</div>
+    <div class="snowflake">🍂</div>
+    <div class="snowflake">🍂</div>
+    <div class="snowflake">🍂</div>    
+    <div class="box-form">
+        <div class="left">
+            <div class="tabs">
+                <input type="radio" id="tab1" name="tab" value="paragraph" checked>
+                <label for="tab1">Paragraph</label>
+                <input type="radio" id="tab2" name="tab" value="ner">
+                <label for="tab2">NER</label>
+            </div>
+            <br><br><br>
+            <textarea placeholder="Paste or type your text here"></textarea>     
+            <div id="loadingIndicator" class="loading-container">
+                <div class="loading-spinner"></div>
+                <p>Loading...</p>
+            </div>    
+            <br>
+            <div style="display: flex; justify-content: space-between;">
+                <button id="generateBtn">Generate Summary</button>
+                <p id="textLength" style="font-weight: bold;color: white;margin-top: 30px;">Length: 0</p>
+            </div>
+                        
+        </div>
+        <div class="right">
+            <div class="summary">
+                <div class="container">                    
+                    <div class="slider-container">
+                        <label for="lengthSlider">Penalty:</label>
+                        <input type="range" id="lengthSlider" min="1" max="3" value="2" step="1" oninput="updateLabel()">
+                        <span id="lengthValue">Medium</span>
+                    </div>
+                    <img src="/static/assets/news.svg" width="150" alt="news" style="image-orientation: right;">
+                </div>                            
+                <br>
+                <div id="summaryDisplay">                   
+                </div>
+                <br>               
+                <div style="display: flex; justify-content: space-between;">
+                    <p id="summaryLength">Length: 0</p>
+                    <div id="audioIcon" class="audio-icon" onclick="readSummary()">
+                        <img src="/static/assets/newspaper.png" alt="Audio Icon">
+                    </div>                 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

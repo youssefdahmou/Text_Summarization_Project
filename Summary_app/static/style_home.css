@@ -1,0 +1,256 @@
+body {
+    background-image: linear-gradient(135deg, orangered 10%, orange 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.box-form {
+    width: 80%;
+    display: flex;
+    background-color: olive;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 6px black;
+}
+
+.box-form div {
+    height: auto;
+}
+
+.box-form .left {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box-form .right {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+.box-form .left textarea {
+    width: 90%; 
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    height: 500px;
+    border-bottom: 2px solid #B0B3B9;
+}
+
+.box-form .left .tabs {
+    margin-bottom: 10px;
+}
+
+.box-form .left .tabs input {
+    display: none;
+}
+
+.box-form .left .tabs label {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+}
+.box-form .left .tabs label:hover {
+    background-color: white;
+    color: olive;
+    font-weight: bold;
+}
+
+.box-form .left .tabs input:checked+label {
+    background-color: orchid;
+}
+.box-form .left .tabs input:checked+label:hover {
+    background-color: white;
+    color: olive;
+    font-weight: bold;
+}
+
+.box-form .left button {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    border: 0;
+    background-color: purple;
+    transition: background-color 0.3s ease;
+}
+.box-form .left button:hover {
+    background-color: #fff;
+    color: olive;
+}
+
+.box-form .left label {
+    display: block;
+    margin-top: 20px;
+}
+
+.box-form .left label span.text-checkbox {
+    display: inline-block;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.box-form .left label input[type="checkbox"] {
+    display: ruby;
+}
+
+.box-form .left label::before {
+    content: ' \f00c';
+    position: absolute;
+    font-family: FontAwesome;
+    background: transparent;
+    border: 3px solid purple;
+    border-radius: 4px;
+    color: transparent;
+    left: -30px;
+    transition: all 0.2s linear;
+}
+
+
+.box-form .right label:hover::before .text-checkbox {
+    background: olive;
+}
+
+.box-form .right input[type="range"] {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.box-form .right #lengthValue {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.box-form .right {
+    padding: 20px; /* Removed width to allow flexibility */
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.box-form .right .summary {
+    text-align: left;
+    
+
+}
+
+.box-form .right h5 {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.box-form .right #summaryDisplay {
+    margin-top: 10px;
+    background-color: olive;
+    width: 90%; 
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    height: 500px;
+    border-bottom: 2px solid #B0B3B9;
+    color: white;
+}
+
+.box-form .right #summaryLength {
+    font-weight: bold;
+    
+}
+
+.box-form .right .summary input[type="range"] {
+    width: 25%;
+    margin-top: 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    border-radius: 5px;
+    background: olive;
+    outline: none;
+}
+
+.box-form .right .summary input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 20px;
+    border-radius: 50%;
+    background: purple;
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.slider-container {
+    flex: 1;
+    margin-left: 1px; 
+    padding: 50;
+}
+.audio-icon {
+    cursor: pointer;
+}
+
+.audio-icon img {
+    width: 30px; 
+    margin-top: 10px;
+    height: auto;
+}
+
+/* customizable snowflake styling */
+.snowflake {
+    color: cyan;
+    font-size: 1em;
+    font-family: Arial;
+    text-shadow: 0 0 1px #000;
+  }
+  @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+  
+  .loading-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+.loading-spinner {
+    border: 8px solid purple;
+    border-radius: 50%;
+    border-top: 8px solid orangered;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
