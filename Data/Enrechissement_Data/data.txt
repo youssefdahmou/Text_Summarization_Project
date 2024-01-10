@@ -1,0 +1,6 @@
+Data
+The following data is intended for advancing news summarization research.
+ It's three datasets (XSum, CNN/Daily Mail, Multi-News) combined into one
+ easy-to-use CSV file. It provides the original ID of each record, along with the article and its corresponding summary.
+
+Link:https://www.kaggle.com/datasets/sbhatti/news-summarization/data
